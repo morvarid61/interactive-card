@@ -154,7 +154,7 @@ body {
 }
 
 .group {
-    background: url(/images/Group.png)no-repeat right;
+    background: url(images/Group.png)no-repeat right;
     width: 186px;
     height: 26px;
     margin: 33px 139px;
