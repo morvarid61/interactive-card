@@ -12,8 +12,9 @@
 
 ## Author
 
-- Author - [@Marjan Sadat Lavasni](https://github.com/morvarid61)
-- Website - [@Andishe Parsi Ikad](https://andishehparsi.ir/)
+- Author - [Marjan Sadat Lavasni](https://github.com/morvarid61)
+- Telegram - [@morvarid61](https://t.me/morvarid6191)
+- Website - [Andishe Parsi Ikad](https://andishehparsi.ir/)
 - E-mail - [marij6191[@]gmail.com](mailto:marij6191@gmail.com)
 
 ## Further Details
