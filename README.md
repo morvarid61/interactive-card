@@ -1,7 +1,6 @@
 # Interactive Card
  
 
-
 ### screen shot
 
 ![Screen Shot](./SCREENSHOT.JPG)
