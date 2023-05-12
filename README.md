@@ -13,7 +13,7 @@ This project is designed with Gradient and JavaScript.
 
 - Author - [@Marjan Sadat Lavasni](https://github.com/morvarid61)
 - Website - [@Andishe Parsi Ikad](https://andishehparsi.ir/)
-- E-mail - [@marij6191@gmail.com](marij6191@gmail.com)
+- E-mail - [marij6191@gmail.com](mailto:marij6191@gmail.com)
 
 ## Further Details
 
