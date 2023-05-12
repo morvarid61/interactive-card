@@ -1,19 +1,21 @@
-## Interactive-card
+# Interactive Card
  
 
-# what is this?
-
-This project is designed with Gradient and JavaScript.
 
 ### screen shot
 
 ![Screen Shot](./SCREENSHOT.JPG)
 
+### Links
+
+- Solution URL: [View here](https://github.com/morvarid61/interactive-card)
+- Live Site URL: [View here](https://morvarid61.github.io/interactive-card/)
+
 ## Author
 
 - Author - [@Marjan Sadat Lavasni](https://github.com/morvarid61)
 - Website - [@Andishe Parsi Ikad](https://andishehparsi.ir/)
-- E-mail - [marij6191@gmail.com](mailto:marij6191@gmail.com)
+- E-mail - [marij6191[@]gmail.com](mailto:marij6191@gmail.com)
 
 ## Further Details
 
