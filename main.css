@@ -20,24 +20,18 @@ body {
 }
 
 .container {
-    display: grid;
-    grid-template-columns: 187px 447px;
-    grid-template-rows: 164px 245px;
-    grid-template-areas:
-        "c . . . . . ."
-        "c j j j j a a"
-        "c b b b b a a"
-        "c b b b b a a"
-        "c b b b b a a"
-        "f f f f f f f";
-    grid-gap: 37px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+
 }
 
 .color-card {
     width: 483px;
     height: 900px;
     background: url(./images/bg-main-desktop.png)no-repeat left;
-    grid-area: c;
+    margin-left: 0 auto;
 
 }
 
@@ -45,35 +39,36 @@ body {
     width: 447px;
     height: 245px;
     background: url(./images/bg-card-front.png)no-repeat right;
-    grid-area: j;
-
+    border-radius: 10px;
+    margin-top: 187px;
+    margin-left: 164px;
 }
 
 .Circle-box {
     width: 84px;
     height: 47px;
     display: flex;
-    margin: 28px 32px;
+    margin-left: 32px;
     border-radius: 0px;
     align-items: center;
     justify-content: space-between;
 
 }
 
-.big {
+.big-Circle {
     width: 47px;
     height: 47px;
     border-radius: 50px;
     background: #fff;
-
+    margin-top: 28px;
 }
 
-.smell {
+.small-Circle {
     width: 21px;
     height: 21px;
     border-radius: 50px;
     border: 1px solid #FFFFFF;
-
+    margin-top: 28px;
 }
 
 .card-number {
@@ -83,7 +78,7 @@ body {
     letter-spacing: 3.5px;
     text-align: left;
     color: #fff;
-    margin: 64px  25px 0;
+    margin: 64px 25px 0;
 
 }
 
@@ -114,8 +109,10 @@ body {
     height: 245px;
     border-radius: 10px;
     background-image: linear-gradient (left #FFFFFF 0%, top#1a2d98 10%, black 20%);
-    grid-area: b;
-    margin-left: 91px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 23px 258px;
 }
 
 #grad3 {
@@ -126,10 +123,11 @@ body {
 
 
 .card-back-black {
-    margin-top: 23px;
     background: #2F2F2F;
     width: 447px;
     height: 54px;
+    border-radius: 4px;
+    margin-top: 23px;
 
 }
 
@@ -138,19 +136,18 @@ body {
     height: 38px;
     width: 361px;
     border-radius: 4px;
-    margin: 24px 41px;
+    margin-left: 41px;
+    justify-content: space-around;
 }
 
-.card-back-gray img {
-    width: 32px;
-    height: 18px;
+.three-zeros {
+    color: #FFFFFF;
     font-size: 14px;
     font-weight: 500;
     line-height: 18px;
     letter-spacing: 2px;
     text-align: right;
-    float: right;
-    margin: 10px;
+    padding: 10px;
 }
 
 .group {
@@ -158,17 +155,18 @@ body {
     width: 186px;
     height: 26px;
     margin: 33px 139px;
+
 }
 
 .container-Cardholder {
     width: 381px;
     height: 352px;
     background-color: #F2F2F2;
-    grid-area: a;
-    grid-column: 3;
-    margin: 88px 221px;
+    margin: 275px 400px;
+
 }
-#name{
+
+#name {
     opacity: 20%;
     width: 381px;
     height: 45px;
@@ -178,6 +176,7 @@ body {
     font-weight: 500;
     background: #fff;
 }
+
 .name-Cardholder {
     font-size: 12px;
     font-weight: 500;
@@ -189,7 +188,7 @@ body {
 
 }
 
-.number-Cardholder  {
+.number-Cardholder {
 
     opacity: 20%;
     width: 381px;
@@ -254,10 +253,56 @@ body {
 
 .attribution {
     font-size: 11px;
-    text-align: center;
-    grid-area: f;
+align-items: flex-end;
 }
 
 .attribution a {
     color: hsl(228, 45%, 44%);
+    
+    text-align: center;
+}
+
+@media only screen and (max-width:750px) {
+
+    .container {
+        display: grid;
+        grid-template-rows: 5fr;
+        grid-template-columns: 1fr;
+        grid-template-areas:
+            ". ."
+            "c c"
+            "j j"
+            "b b"
+            "a a";
+        grid-gap: 3px;
+        justify-items: center;
+        align-items: center;
+
+    }
+
+    .color-card {
+        width: 375px;
+        height: 240px;
+
+    }
+
+    .card-back {
+        margin-top: 32px;
+        grid-area: c;
+    }
+
+    .color-jane {
+        margin: 94px 16px;
+        grid-area: b;
+
+    }
+
+    .container-Cardholder {
+        grid-area: a;
+    }
+
+
+    .attribution {
+        display: none;
+    }
 }
