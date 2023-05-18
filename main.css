@@ -281,10 +281,10 @@ body {
     color: hsl(228, 45%, 44%);
     font-weight: 500;
     text-align: center;
-    bottom: 80px;
+    
 }
 
-@media only screen and (max-width:750px) {
+/* @media only screen and (max-width:750px) {
 
     .container-forme {
         display: flex;
@@ -427,9 +427,11 @@ height: 20px;
     display: none;
 
     }
+    .container-Cardholder {
+        width: 381px;
+        height: 352px;
+        margin-bottom:0 auto;
+    }
+    
 
-}.container-Cardholder {
-    width: 381px;
-    height: 352px;
-    margin-bottom:0 auto;
-}
+} */
