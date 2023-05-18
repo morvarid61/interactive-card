@@ -7,6 +7,7 @@
   <!-- displays site properly based on user's device -->
   <link href="main.css" rel="stylesheet">
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="bootstrap.min.css">
 
   <title>Frontend Mentor | Interactive card details form</title>
 
@@ -15,7 +16,7 @@
 </head>
 
 <body>
-  <div class="container">
+  <div class="container-forme">
     <div class="color-card">
 
       <div class="color-jane ">
@@ -46,35 +47,36 @@
         <div class="group"></div>
       </div>
     </div>
-    <div class="container-Cardholder">
-      <div class="name-Cardholder">CARDHOLDER NAME</div>
-      <input class=" number-Cardholder " type="text" id="name" value="e.g. Jane Appleseed ">
-      <div>
-        <div class="name-Cardholder">CARD NUMBER</div>
 
-        <input class="number-Cardholder " type="Number" value="e.g. 1234 5678 9123 0000">
-      </div>
-      <div class="date">
-        <div class="name-Cardholder EXP">Exp. Date (MM/YY)
-          <input class="date-Cardholder" type="number" value="MM">
-          <input class="date-Cardholder" type="number" value="YY">
+
+    <form class="container-Cardholder ">
+      <label class="Title-Cardholder ">CARDHOLDER NAME</label>
+      <input class=" content-Cardholder " type="text" id="name" placeholder="e.g. Jane Appleseed ">
+
+      <label class="Title-Cardholder">CARD NUMBER</label>
+
+      <input class="content-Cardholder" id="Title"  type="Number" placeholder="e.g. 1234 5678 9123 0000">
+
+      <div class="Expiration-date ">
+        <div class="Title-Cardholder-date d-inline-block  ">
+          <label >Exp. Date (MM/YY) </label>
+          <input class="content-Cardholder-date " type="number" placeholder="MM">
+          <!-- <label class="Title-Cardholder-date"></label><br> -->
+          <input class="content-Cardholder-date " type="number" placeholder="YY">
         </div>
-        <div class=" name-Cardholder cvc">CVC
-          <input class="date-Cardholder cvc" type="number" value="e.g. 123">
+        <div class=" Title-Cardholder-cvc d-inline-block ">
+          <label class="ml-3"> CVC</label><br>
+          <input class="content-Cardholder-cvc" type="number" placeholder="e.g. 123">
         </div>
+      </div><br>
+      <div class="Confirm" id="confirm">
+        <h5>Confirm</h5>
       </div>
-      <div>
-        <div class="Confirm-button ">
-          <div class="Confirm">
-            Confirm
-          </div>
-        </div>
-      </div>
+    </form>
 
+  </div>
 
-    </div>
-
-    <!-- Completed state start
+  <!-- Completed state start
 
     Thank you!
     We've added your card details
@@ -83,7 +85,7 @@
 
 <div class="attribution">
   Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
-  Coded by <a href="#">Your Name Here</a>.
+  Coded by <a href="https://morvarid61.github.io/interactive-card/" target="_blank">Marjan sadat Lavassani</a>
 </div>
 
 
