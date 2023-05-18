@@ -3,7 +3,7 @@
 
 ### screen shot
 
-![Screen Shot](./SCREENSHOT.JPG)
+![Screen Shot](./Screenshot.JPG)
 
 ### Links
 
