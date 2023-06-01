@@ -24,6 +24,7 @@
 
 body {
     background-color: #F2F2F2;
+    
 }
 
 .container-forme {
@@ -166,11 +167,9 @@ body {
 .container-Cardholder {
     width: 381px;
     height: 352px;
-    margin-bottom: 110px;
 }
 
 .Title-Cardholder {
-
     font-size: 12px;
     font-weight: 500;
     line-height: 15px;
@@ -178,19 +177,25 @@ body {
     text-align: left;
     margin-top: 20px;
 }
+.Cardholder::placeholder {
+    opacity: 25%; 
 
-.content-Cardholder {
-    padding: 11px;
-    width: 381px;
-    border-radius: 8px;
-    margin-bottom: 9px;
-    font-size: 18px;
-    font-weight: 500;
-    line-height: 23px;
-    letter-spacing: 0px;
-    text-align: left;
-    opacity: 25%;
+
+border: 1px solid;
+
+border-image-source: linear-gradient(163.95deg, #6348FE 4.74%, #610595 88.83%);
+
+
 }
+.content-Cardholder{
+    border-radius: 8px;
+    width: 381px;
+   height: 45px;
+   padding: 11px;
+    border: 1px solid #DFDEE0; 
+
+  }
+
 
 .Expiration-date {
     width: 380px;
@@ -210,19 +215,24 @@ body {
 
 
 }
+.content-Cardholder-date::placeholder{
 
+    opacity: 25%;
+    border-color :1px solid linear-gradient(163.95deg, #6348FE 4.74%, #610595 88.83%),
+linear-gradient(0deg, #FFFFFF, #FFFFFF);
+
+}
 .content-Cardholder-date {
     width: 80px;
     height: 45px;
     border-radius: 8px;
     padding-left: 11px;
-    opacity: 25%;
     font-size: 18px;
     font-weight: 500;
     line-height: 22px;
     letter-spacing: 0px;
     text-align: left;
-
+    border: 1px solid #DFDEE0;
 }
 
 .Title-Cardholder-cvc {
@@ -232,9 +242,15 @@ body {
     font-size: 12px;
 
 }
-
-.content-Cardholder-cvc {
+.content-Cardholder-cvc::placeholder{
+    /* color: #21092F; */
     opacity: 25%;
+    border-color :1px solid linear-gradient(163.95deg, #6348FE 4.74%, #610595 88.83%),
+linear-gradient(0deg, #FFFFFF, #FFFFFF);
+
+}
+.content-Cardholder-cvc {
+    border: 1px solid #DFDEE0;
     padding: 9px;
     border-radius: 8px;
     font-weight: 500;
@@ -281,37 +297,34 @@ body {
     
 }
 
-/* @media only screen and (max-width:750px) {
+ @media only screen and (max-width:750px) {
 
     .container-forme {
+        width: 375px;
+        height: 704px;
         display: flex;
-        flex-direction: row;
-    flex-wrap: wrap;
-
-    }
+        flex-direction:column;
+        align-items: stretch;
+        position: relative;
+        }
 
     .color-card {
         height: 240px;
-        background: url(./images/bg-main-desktop.png)no-repeat left;
-position: relative;
+        background: url(./images/bg-main-desktop.png)no-repeat center;
+       
+        order: -1;
+    
     }
 
     .color-jane {
         width: 286px;
         height: 157px;
-        background: url(./images/bg-card-front.png)no-repeat right;
+        background: url(./images/bg-card-front.png)no-repeat ;
         border-radius: 10px;
 
     }
-
-    .color-jane {
-        width: 286px;
-        height: 157px;
-        background: url(./images/bg-card-front.png)no-repeat right;
-        border-radius: 10px;
-        order: 2;
-    }
-
+ 
+    
     .Circle-box {
         width: 54px;
         height: 30px;
@@ -365,7 +378,7 @@ height: 20px;
         display: flex;
         flex-direction: row;
         /* justify-content: space-between; */
-        /* margin: 25px; */
+         /* margin: 25px;  */
     }
 
     .Card-date {
@@ -381,8 +394,8 @@ height: 20px;
         background-image: linear-gradient (left #FFFFFF 0%, top#1a2d98 10%, black 20%);
         display: flex;
         flex-direction: column;
-        order: -2;
-        
+    
+    
     }
 
     #grad3 {
@@ -427,8 +440,8 @@ height: 20px;
     .container-Cardholder {
         width: 381px;
         height: 352px;
-        margin-bottom:0 auto;
-    }
+        margin-top: 331px;
+    } 
     
 
-} */
+}
