@@ -60,7 +60,7 @@ body {
     align-items: center;
     justify-content: space-between;
     margin-left: 32px;
-    
+
 }
 
 .big-Circle {
@@ -88,7 +88,7 @@ body {
     color: #fff;
     top: 60px;
     left: 30px;
-position: relative;
+    position: relative;
 }
 
 .name-jane {
@@ -103,9 +103,9 @@ position: relative;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-top:100px;
-left: 30px;
-position: relative;
+    top: 100px;
+    left: 30px;
+    position: relative;
 }
 
 .Card-date {
@@ -356,9 +356,9 @@ position: relative;
         height: 30px;
         border-radius: 50px;
         background: #fff;
-        
-        
-        
+
+
+
     }
 
     .small-Circle {
@@ -379,7 +379,7 @@ position: relative;
         width: 239px;
         left: 20px;
         bottom: 20px;
-        
+
     }
 
     .name-jane {
@@ -393,8 +393,8 @@ position: relative;
         color: #fff;
         display: flex;
         flex-direction: row;
-    top: 60px;
-    left: 18px;
+        top: 60px;
+        left: 18px;
         position: relative;
 
 
